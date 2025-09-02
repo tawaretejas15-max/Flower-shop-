@@ -1,0 +1,85 @@
+<!DOCTYPE html>   
+<html>   
+<head>   
+<title>Order Cancel Page </title> 
+</head>    
+<body>  
+<style>
+       Body {  
+  font-family: Calibri;  
+  background-color: white; 
+  
+} 
+button {   
+       background-color:darkgreen;   
+       width: 30%;  
+       color: white;   
+       padding: 15px;   
+       margin: 5px;   
+       border: none;      
+         } 
+form {   
+        border: 3px solid Green;   
+        height:30%;
+        width:30%;
+        padding: 0px;
+       
+    }  
+    input[type=text]{
+        text-align: left;
+        width: 78%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        border: 2px solid darkgreen ;   
+        box-sizing: border-box;   
+    } 
+    input[type=radio]{
+        text-align: left;
+        width: 25%;  
+    }
+    textarea{
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        border: 2px solid darkgreen ;   
+        box-sizing: border-box;
+
+    }
+      
+ .container {   
+        padding: 20px;   
+        background-color: lightgreen;  
+    } 
+    h1{
+     
+        color: #4CAF50;
+    }  
+</style>   
+</head>    
+<body>    
+ <center>     
+    <form action=" order_cancel.php" method="post"> 
+<center> <h1>Order Cancel Form</h1>  </center>
+    <form>  
+        <div class="container">   
+            
+         <label>First Name:</label>
+         <input type="text" placeholder="Enter Firstname" name="fname" required=""><br>
+         <label>Last Name:</label>
+         <input type="text" placeholder="Enter Lastname" name="lname" required=""><br>
+         <label>Email :</label>
+         <input type="text" placeholder="Enter Email Id" name="email_id" required=""><br>
+         <label>Phone no:</label>
+         <input type="text" placeholder="Enter Phone no" name="phn_no" required=""><br><br>  
+         <label for="cancel">Reason Of Order Cancellation :</label>
+            <textarea name="cancel" rows="10" cols="50" style="width: 362px; height: 174px;">            </textarea>
+<br><br>
+            <center>
+<button onclick="location.href='index1.php'" type="button">Submit</button>
+            </center>
+</div>
+</form>
+</form></center>
+           
+         
+     
+  </body></html>

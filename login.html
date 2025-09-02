@@ -1,0 +1,71 @@
+<!DOCTYPE html>   
+<html>   
+<head>   
+<title> Login Page </title>  
+<style>
+  
+Body   
+    body {
+            margin: 0;
+            padding: 0;
+            background-image: url('images/login.jpg'); /* Replace 'background-image.jpg' with your image file path */
+            background-size: cover; /* Adjust the background size to cover the entire screen */
+            background-position: center; /* Center the background image */
+            font-family: Arial, sans-serif;
+        } 
+  
+
+button {   
+       background-color:darkgreen;   
+       width: 50%;  
+       color: white;   
+       padding: 15px;   
+       margin: 5px;   
+       border: none;      
+         }   
+ form {   
+        border: 3px solid Green;   
+        height:30%;
+        width:30%;
+       
+    }
+      
+ input[type=text], input[type=password] {  
+        text-align: left;
+        width: 75%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        border: 2px solid darkgreen ;   
+        box-sizing: border-box;   
+    }  
+    
+ .container {   
+        padding: 25px;   
+        background-color: lightgreen;  
+    } 
+    h1{
+        text-align:center;
+        color: #4CAF50;
+    }  
+</style>   
+</head>    
+<body>  
+    <center>  
+    <form action="login.php" method="post">  
+  
+<h1>Login Form </h1>
+
+        <div class="container">   
+            <label>Username : </label>
+         <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required><br><br>      
+            <center><button type="submit">Login</button>  <br>
+            
+            <a href="#">Forgot password? </a> <a href="registration.html">Register now </a>  <br>
+            
+</center>
+        </div>   
+    </form>     
+</body>     
+</html>  
